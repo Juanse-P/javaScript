@@ -21,7 +21,11 @@ nav div object {
     margin-right: 3rem;
 }
 
-.bodyf {
+.fondo {
+    background: white;
+}
+
+/* .bodyf {
     background: url("../multimedia/fondop.jpg");
     height: 100%;
     background-size: cover;
@@ -200,4 +204,4 @@ footer {
 .footerP2G {
     text-align: center;
     margin-top: 2rem;
-}
+} */
