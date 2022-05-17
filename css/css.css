@@ -25,6 +25,10 @@ nav div object {
     background: white;
 }
 
+.banner {
+    width: 100vmin;
+}
+
 .bodyf {
     background: url("../multimedia/fondop.jpg");
     height: 100%;
@@ -41,7 +45,8 @@ nav div object {
     padding: 2rem;
 }
 
-.sigcont {
+.contenedorPrincipal {
+    margin: 2rem;
     display: grid;
     grid-template-columns: 1fr 2fr 2fr 2fr;
     grid-template-areas:
@@ -53,7 +58,7 @@ nav div object {
         "contlat productolst16 productolst17 productolst18"
         "contlat productolst19 productolst20 productolst21"
         "contlat productolst22 productolst23 productolst24";
-    gap: 10px;
+    gap: 2rem;
 }
 
 .productolst {
@@ -212,7 +217,31 @@ footer {
     height: auto;
 }
 
-.img-fluid {
+.imaCar {
+
     height: 4rem;
     width: 4rem;
+
+}
+
+.contenedorCarrito {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.secCarrito {
+    background: #FFDE59;
+    margin: 4rem 5rem 4rem 5rem;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.carroCompras {
+    background-color: #FFDE59;
+    border-radius: 10px;
+}
+
+.btn-pago {
+    margin-top: 2rem;
 }
