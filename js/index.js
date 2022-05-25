@@ -1,38 +1,24 @@
 //Se declaran las variables con las que se obtienen objetos del DOM y se crea el carrito
 let carrito = [];
 const divisa = '$';
-const getElementos = document.querySelector('#elementos');
-const getCarrito = document.querySelector('#carrito');
-const getTotal = document.querySelector('#total');
+const getElementos = document.querySelector('.elementos');
+const getCarrito = document.querySelector('.carrito');
+const getTotal = document.querySelector('.total');
 const getBotonVaciar = document.querySelector('#boton-vaciar');
 const miLocalSrorage = window.localStorage;
 //Se escriben las funciones con las que trabaja el codigo
 //Funcion para crear cada una de las tarjetas donde estan los productos en el html
 function escribirProductos() {
     productos.forEach((info) => {
-        const nodoDiv = document.createElement('div');
-        nodoDiv.classList.add('card', `productolst${info.id}`);
-        const bodyCard = document.createElement('div');
-        bodyCard.classList.add('card-body');
-        const tituloCard = document.createElement('h5');
-        tituloCard.classList.add('card-title');
-        tituloCard.textContent = info.nombre;
-        const imagenCard = document.createElement('img');
-        imagenCard.classList.add('img-fluid');
-        imagenCard.setAttribute('src', info.imagen);
-        const precioCard = document.createElement('p');
-        precioCard.classList.add('card-text');
-        precioCard.textContent = `${divisa} ${info.precio}`;
-        const botonCard = document.createElement('button');
+        let botonCard = document.createElement('button');
         botonCard.classList.add('btn', 'btn-warning');
         botonCard.textContent = 'Añadir al carrito';
         botonCard.setAttribute('marcador', info.id);
         botonCard.addEventListener('click', anyadirProductoAlCarrito);
-        bodyCard.appendChild(tituloCard);
-        bodyCard.appendChild(imagenCard);
-        bodyCard.appendChild(precioCard);
-        bodyCard.appendChild(botonCard);
-        nodoDiv.appendChild(bodyCard);
+        let nodoDiv = document.createElement('div');
+        nodoDiv.classList.add('card', `productolst`, `productolst${info.id}`);
+        nodoDiv.innerHTML = `<div class="card-body"> <div> <h5 class="card-title">${info.nombre}</h5> </div> <div> <img class="img-fluid" src="${info.imagen}"> </div><div> <p class="card-text">${divisa} ${info.precio}</p> </div> </div>`
+        nodoDiv.appendChild(botonCard)
         getElementos.appendChild(nodoDiv);
     });
 }
@@ -83,11 +69,27 @@ function calcularTotal() {
     }, 0).toFixed(2);
 }
 function vaciarCarrito() {
-    carrito = [];
-    actualizarCarrito();
-    localStorage.clear();
+    Swal.fire({
+        title: 'Estas seguro de vaciar tu carrito?',
+        text: "Si lo vacias no podras recuperarlo!",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Si, quiero vaciarlo!'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            carrito = [];
+            actualizarCarrito();
+            localStorage.clear();
+            Swal.fire(
+                'Se ha eliminado tu carrito!',
+                'Vuelve a armar tu carrito con nustros productos',
+                'success',
+            )
+        }
+    })
 }
-//funciones para guardar y sacar datos del localStorage
 function guardarCarritoEnLocalStorage() {
     miLocalSrorage.setItem(`carrito`, JSON.stringify(carrito));
 }
