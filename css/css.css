@@ -29,7 +29,7 @@ nav div img {
 .contenedorPrincipal {
     margin: 2rem;
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-columns: 1fr 3fr 3fr 3fr;
     grid-template-areas:
         "contlat productolst1 productolst2 productolst3"
         "contlat productolst4 productolst5 productolst6"

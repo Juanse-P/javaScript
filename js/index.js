@@ -41,7 +41,7 @@ function actualizarCarrito() {
         }, 0);
         const nodoDiv = document.createElement('li');
         nodoDiv.classList.add('list-group-item', 'text-right', 'mx-2');
-        nodoDiv.textContent = `${numeroUnidadesItem} x ${miElemento[0].nombre} = ${divisa} ${miElemento[0].precio}`;
+        nodoDiv.innerHTML = `<img class="img-fluid" src="${miElemento[0].imagen}"><p>${numeroUnidadesItem} x ${miElemento[0].nombre} = ${divisa} ${miElemento[0].precio}</p>`;
         const miBoton = document.createElement('button');
         miBoton.classList.add('btn', 'btn-danger');
         miBoton.textContent = 'X';
