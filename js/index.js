@@ -6,10 +6,20 @@ const getCarrito = document.querySelector('.carrito');
 const getTotal = document.querySelector('.total');
 const getBotonVaciar = document.querySelector('#boton-vaciar');
 const miLocalSrorage = window.localStorage;
+let data
 //Se escriben las funciones con las que trabaja el codigo
 //Funcion para crear cada una de las tarjetas donde estan los productos en el html
+async function getData() {
+    let response = await fetch(`../data.json`);
+    data = await response.json();
+    getBotonVaciar.addEventListener('click', vaciarCarrito);
+    cargarCarritoDeLocalStorage();
+    escribirProductos();
+    actualizarCarrito();
+}
+getData();
 function escribirProductos() {
-    productos.forEach((info) => {
+    data.forEach((info) => {
         let botonCard = document.createElement('button');
         botonCard.classList.add('btn', 'btn-warning');
         botonCard.textContent = 'Añadir al carrito';
@@ -26,14 +36,13 @@ function anyadirProductoAlCarrito(evento) {
     carrito.push(evento.target.getAttribute('marcador'));
     actualizarCarrito();
     guardarCarritoEnLocalStorage();
-
 }
 //Funcion para crear loa elementos del carrito y evitar que se dupliquen los elementos
 function actualizarCarrito() {
     getCarrito.textContent = '';
     const quitarDuplicados = [...new Set(carrito)];
     quitarDuplicados.forEach((elemento) => {
-        const miElemento = productos.filter((elementoProductos) => {
+        const miElemento = data.filter((elementoProductos) => {
             return elementoProductos.id === parseInt(elemento);
         });
         const numeroUnidadesItem = carrito.reduce((total, itemId) => {
@@ -62,11 +71,11 @@ function borrarItemCarrito(evento) {
 }
 function calcularTotal() {
     return carrito.reduce((total, elemento) => {
-        const miElemento = productos.filter((elementoProductos) => {
+        const miElemento = data.filter((elementoProductos) => {
             return elementoProductos.id === parseInt(elemento);
         });
         return total + miElemento[0].precio;
-    }, 0).toFixed(2);
+    }, 0).toFixed(0);
 }
 function vaciarCarrito() {
     Swal.fire({
@@ -98,7 +107,3 @@ function cargarCarritoDeLocalStorage() {
         carrito = JSON.parse(miLocalSrorage.getItem(`carrito`));
     }
 }
-getBotonVaciar.addEventListener('click', vaciarCarrito);
-cargarCarritoDeLocalStorage();
-escribirProductos();
-actualizarCarrito();

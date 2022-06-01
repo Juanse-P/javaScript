@@ -50,102 +50,6 @@ nav div img {
     justify-content: space-between;
 }
 
-.productolst1 {
-    grid-area: productolst1;
-}
-
-.productolst2 {
-    grid-area: productolst2;
-}
-
-.productolst3 {
-    grid-area: productolst3;
-}
-
-.productolst4 {
-    grid-area: productolst4;
-}
-
-.productolst5 {
-    grid-area: productolst5;
-}
-
-.productolst6 {
-    grid-area: productolst6;
-}
-
-.productolst7 {
-    grid-area: productolst7;
-}
-
-.productolst8 {
-    grid-area: productolst8;
-}
-
-.productolst9 {
-    grid-area: productolst9;
-}
-
-.productolst10 {
-    grid-area: productolst10;
-}
-
-.productolst11 {
-    grid-area: productolst11;
-}
-
-.productolst12 {
-    grid-area: productolst12;
-}
-
-.productolst13 {
-    grid-area: productolst13;
-}
-
-.productolst14 {
-    grid-area: productolst14;
-}
-
-.productolst15 {
-    grid-area: productolst15;
-}
-
-.productolst16 {
-    grid-area: productolst16;
-}
-
-.productolst17 {
-    grid-area: productolst17;
-}
-
-.productolst18 {
-    grid-area: productolst18;
-}
-
-.productolst19 {
-    grid-area: productolst19;
-}
-
-.productolst20 {
-    grid-area: productolst20;
-}
-
-.productolst21 {
-    grid-area: productolst21;
-}
-
-.productolst22 {
-    grid-area: productolst22;
-}
-
-.productolst23 {
-    grid-area: productolst23;
-}
-
-.productolst24 {
-    grid-area: productolst24;
-}
-
 .contlat {
     grid-area: contlat;
 }
@@ -167,10 +71,8 @@ nav div img {
 }
 
 .imaCar {
-
     height: 4rem;
     width: 4rem;
-
 }
 
 .carroCompras {
@@ -184,7 +86,6 @@ nav div img {
 
 @media screen and (max-width: 1300px) {
     .contenedorPrincipal {
-        margin: 2rem;
         display: grid;
         grid-template-columns: 1fr 2fr 2fr;
         grid-template-areas:
@@ -204,7 +105,6 @@ nav div img {
     }
 
     nav div img {
-        width: 14rem;
         margin-left: 0;
     }
 }
