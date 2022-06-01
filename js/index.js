@@ -8,7 +8,6 @@ const getBotonVaciar = document.querySelector('#boton-vaciar');
 const miLocalSrorage = window.localStorage;
 let data
 //Se escriben las funciones con las que trabaja el codigo
-//Funcion para crear cada una de las tarjetas donde estan los productos en el html
 async function getData() {
     let response = await fetch(`../data.json`);
     data = await response.json();
