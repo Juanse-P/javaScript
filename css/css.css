@@ -27,18 +27,8 @@ nav div img {
 }
 
 .contenedorPrincipal {
-    margin: 2rem;
     display: grid;
-    grid-template-columns: 1fr 3fr 3fr 3fr;
-    grid-template-areas:
-        "contlat productolst1 productolst2 productolst3"
-        "contlat productolst4 productolst5 productolst6"
-        "contlat productolst7 productolst8 productolst9"
-        "contlat productolst10 productolst11 productolst12"
-        "contlat productolst13 productolst14 productolst15"
-        "contlat productolst16 productolst17 productolst18"
-        "contlat productolst19 productolst20 productolst21"
-        "contlat productolst22 productolst23 productolst24";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
 }
 
@@ -76,6 +66,7 @@ nav div img {
 }
 
 .carroCompras {
+    margin-bottom: 1rem;
     background-color: #FFDE59;
     border-radius: 10px;
 }
@@ -84,24 +75,23 @@ nav div img {
     margin-top: 2rem;
 }
 
+.contenedorElementos {
+    margin: 2rem;
+}
+
+.asideLat {
+    grid-area: asideLat;
+}
+
+.carrito {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 @media screen and (max-width: 1300px) {
     .contenedorPrincipal {
         display: grid;
-        grid-template-columns: 1fr 2fr 2fr;
-        grid-template-areas:
-            "contlat productolst1 productolst2"
-            "contlat productolst3 productolst4"
-            "contlat productolst5 productolst6"
-            "contlat productolst7 productolst8"
-            "contlat productolst9 productolst10"
-            "contlat productolst11 productolst12"
-            "contlat productolst13 productolst14"
-            "contlat productolst15 productolst16"
-            "contlat productolst17 productolst18"
-            "contlat productolst19 productolst20"
-            "contlat productolst21 productolst22"
-            "contlat productolst23 productolst24";
-        gap: 1.5rem;
+        grid-template-columns: 1fr 1fr 1fr
     }
 
     nav div img {
@@ -111,69 +101,34 @@ nav div img {
 
 @media screen and (max-width: 800px) {
     .contenedorPrincipal {
-        margin: 1rem;
+        margin: 0rem;
         display: grid;
-        grid-template-columns: 1fr 2fr;
-        grid-template-areas:
-            "contlat productolst1"
-            "contlat productolst2"
-            "contlat productolst3"
-            "contlat productolst4"
-            "contlat productolst5"
-            "contlat productolst6"
-            "contlat productolst7"
-            "contlat productolst8"
-            "contlat productolst9"
-            "contlat productolst10"
-            "contlat productolst11"
-            "contlat productolst12"
-            "contlat productolst13"
-            "contlat productolst14"
-            "contlat productolst15"
-            "contlat productolst16"
-            "contlat productolst17"
-            "contlat productolst18"
-            "contlat productolst19"
-            "contlat productolst20"
-            "contlat productolst21"
-            "contlat productolst22"
-            "contlat productolst23"
-            "contlat productolst24";
+        grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .carrito {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (max-width: 530px) {
     .contenedorPrincipal {
-        margin: 1rem;
+        margin: 0rem;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-areas:
-            "contlat"
-            "productolst1"
-            "productolst2"
-            "productolst3"
-            "productolst4"
-            "productolst5"
-            "productolst6"
-            "productolst7"
-            "productolst8"
-            "productolst9"
-            "productolst10"
-            "productolst11"
-            "productolst12"
-            "productolst13"
-            "productolst14"
-            "productolst15"
-            "productolst16"
-            "productolst17"
-            "productolst18"
-            "productolst19"
-            "productolst20"
-            "productolst21"
-            "productolst22"
-            "productolst23"
-            "productolst24";
         gap: 0.5rem;
+    }
+
+    .contenedorElementos {
+        margin: 0.5rem;
+    }
+
+    .carrito {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }

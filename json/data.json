@@ -1,0 +1,386 @@
+[
+    {
+        "id": 1,
+        "nombre": "Teclado gamer Redragon Kumara K552 QWERTY",
+        "precio": 172500,
+        "imagen": "./multimedia/teclados/Teclado_Gamer_Redragon-Kumara-K552_QWERTY_otemu_Blue_Ingles_US_NG.webp"
+    },
+    {
+        "id": 2,
+        "nombre": "Teclado inalámbrico Logitech K400",
+        "precio": 129000,
+        "imagen": "./multimedia/teclados/Taclado_inalambrico_Logitech_K400-plus_español.webp"
+    },
+    {
+        "id": 3,
+        "nombre": "Teclado Genius Smart KB-100",
+        "precio": 32100,
+        "imagen": "./multimedia/teclados/Teclado_Genius_Smart_KB-100 QWERTY español.webp"
+    },
+    {
+        "id": 4,
+        "nombre": "Kumara OUTEMO",
+        "precio": 170000,
+        "imagen": "./multimedia/teclados/Teclado_gamer_Kumara-QWERTY-OUTEMU_español.webp"
+    },
+    {
+        "id": 5,
+        "nombre": "Teclado bluetooth Logitech K380",
+        "precio": 179900,
+        "imagen": "./multimedia/teclados/Teclado_bluetooth_logitech_K380_QWERTY español.webp"
+    },
+    {
+        "id": 6,
+        "nombre": "Teclado gamer Weibo WB-539",
+        "precio": 45000,
+        "imagen": "./multimedia/teclados/Teclado_gamer_Weibo-WB-539 QWERTY_español.webp"
+    },
+    {
+        "id": 7,
+        "nombre": "Teclado bluetooth Logitech K860",
+        "precio": 479900,
+        "imagen": "./multimedia/teclados/teclado_bluetooth_Logitech-K860_español_QWERTY.webp"
+    },
+    {
+        "id": 8,
+        "nombre": "Teclado HP Alamb 100 Basic",
+        "precio": 52900,
+        "imagen": "./multimedia/teclados/192018069251-001-750Wx750H.jfif"
+    },
+    {
+        "id": 9,
+        "nombre": "Teclado Gamer Inalámbrico Logitech G915 Tkl",
+        "precio": 820000,
+        "imagen": "./multimedia/teclados/Teclado_Logitech-G915-TKL_lightspeed_RGB.webp"
+    },
+    {
+        "id": 10,
+        "nombre": "Teclado gamer Redragon Kumara K552 Blue inglés",
+        "precio": 191900,
+        "imagen": "./multimedia/teclados/Teclado_Gamer_Redragon-Kumara-K552_QWERTY_otemu_Blue_Ingles_US_NG.webp"
+    },
+    {
+        "id": 11,
+        "nombre": "Mouse de juego Logitech G Series Prodigy G203",
+        "precio": 98900,
+        "imagen": "./multimedia/mouse/Mouse_Logitech-G-series-Prodigy-G203-Black.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Mouse inalámbrico Logitech Triathlon M720",
+        "precio": 199900,
+        "imagen": "./multimedia/mouse/Mouse_Inalambrico_Logitech_Triathlon-M720_Negro.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "Mouse inalámbrico HP 200",
+        "precio": 35000,
+        "imagen": "./multimedia/mouse/Mouse_Inalambrico_HP-200_Negro.webp"
+    },
+    {
+        "id": 14,
+        "nombre": "Mouse vertical inalámbrico Klip Xtreme EverRest KMW-390",
+        "precio": 59500,
+        "imagen": "./multimedia/mouse/Mouse_Vertical_Inalambrico_Klip-Xtreme-EverRest-KMW-390-BG.webp"
+    },
+    {
+        "id": 15,
+        "nombre": "Mouse de juego inalámbrico Logitech G Series Lightspeed G305",
+        "precio": 164500,
+        "imagen": "./multimedia/mouse/Mouse_Inalambrico_Logitech-G-Series-Lightspeed-G305-NG.webp"
+    },
+    {
+        "id": 16,
+        "nombre": "Redragon Griffin M607",
+        "precio": 70000,
+        "imagen": "./multimedia/mouse/Mouse_De_Juego_Redragon_Griffin-M607-NG.webp"
+    },
+    {
+        "id": 17,
+        "nombre": "Mouse inalámbrico recargable Logitech Master Series MX Master 3",
+        "precio": 511800,
+        "imagen": "./multimedia/mouse/Mouse_Inalambrico_Recargable_Logitech-Master-Series-MX-Master-3.webp"
+    },
+    {
+        "id": 18,
+        "nombre": "Mouse de juego Logitech G Series Hero G502",
+        "precio": 215000,
+        "imagen": "./multimedia/mouse/Mouse_De_Juego_Logitech-G-Series-G502_Negro.webp"
+    },
+    {
+        "id": 19,
+        "nombre": "Mouse vertical inalámbrico recargable Weibo WB-881",
+        "precio": 46300,
+        "imagen": "./multimedia/mouse/Mouse_Vertical_Inalambrico_Recargable_Weibo-WB-881-Negro.webp"
+    },
+    {
+        "id": 20,
+        "nombre": "Mouse de juego Razer Viper Mini",
+        "precio": 140000,
+        "imagen": "./multimedia/mouse/Mouse_De_Juego_Razer-Viper-MiniNegro.webp"
+    },
+    {
+        "id": 21,
+        "nombre": "Mouse Pad Redragon P006",
+        "precio": 70000,
+        "imagen": "./multimedia/mousepad/Mousepad_Redragon-P006-Kunlun_De_Caucho_Y_Tela_I_420mmx880mm.webp"
+    },
+    {
+        "id": 22,
+        "nombre": "Mouse Pad gamer Havit HV-MP830",
+        "precio": 29200,
+        "imagen": "./multimedia/mousepad/Mousepad_Gamer_Havit_HV-MP830_De_Caucho_Y_Tela_Magic_Eagle_300mmx900mmx3mm_NG.webp"
+    },
+    {
+        "id": 23,
+        "nombre": "mousepad Aoas S4000",
+        "precio": 50000,
+        "imagen": "./multimedia/mousepad/Mousepad_Gamer_Aoas-S4000De_Caucho_YPoliuretano_XL_30cmx80cmx0.4cm_NG.webp"
+    },
+    {
+        "id": 24,
+        "nombre": "Mouse Pad gamer Genius G-WMP 200M GX",
+        "precio": 50000,
+        "imagen": "./multimedia/mousepad/Mousepad_Gamer_Genius-G-WMP-200M-GX_Gaming_De_Goma_M_160mmx900mmx3cm_NG.webp"
+    },
+    {
+        "id": 25,
+        "nombre": "Pad Mouse Gamer Genius Iluminado Rgb Antideslizante",
+        "precio": 109900,
+        "imagen": "./multimedia/mousepad/Mousepad_Gamer_Genius_Iluminado_RGB_Antideslizante_Largo.webp"
+    },
+    {
+        "id": 26,
+        "nombre": "Mousepad Genius Ergonomico",
+        "precio": 79900,
+        "imagen": "./multimedia/mousepad/Mousepad_Genius_Ergonomico_Comodo_Gamer_descansa_Muñeca.webp"
+    },
+    {
+        "id": 27,
+        "nombre": "Mousepad Ergonómico Con Gel Klipxtreme Kmp-100b",
+        "precio": 80000,
+        "imagen": "./multimedia/mousepad/Mousepad_Ergonomico_Con_Gel_Klipxtreme_KMP-100b_NG.webp"
+    },
+    {
+        "id": 28,
+        "nombre": "Mousepad Pad Paño Sencillo Cuadrado Tapete Economico",
+        "precio": 12900,
+        "imagen": "./multimedia/mousepad/Mousepad_Paño_Sencillo_Cuadrado_Tapete_Economico.webp"
+    },
+    {
+        "id": 29,
+        "nombre": "Mousepad Gamer Profesional Speed",
+        "precio": 94900,
+        "imagen": "./multimedia/mousepad/Mousepad_Gamer_Profesional_Speed-880x420_Mn_L_Original.webp"
+    },
+    {
+        "id": 30,
+        "nombre": "Victsing Mouse Pad Con Soporte Gel Para Muñeca",
+        "precio": 71900,
+        "imagen": "./multimedia/mousepad/Victsing_Mousepad_Con_Soporte_Gel_Para_Muñeca_Mousepad.webp"
+    },
+    {
+        "id": 31,
+        "nombre": "Monitor gamer Samsung F24T35 led 24",
+        "precio": 672000,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_Samsung-F24T35-Led-24-Azul-Y_Gris_Oscuro_100-V-240V.webp"
+    },
+    {
+        "id": 32,
+        "nombre": "Monitor gamer curvo Samsung C27R500FHL led 27",
+        "precio": 950000,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_Curvo__Samsung-C27R500FHL-Led-27-Dark_Blue_Gray_100V240V.webp"
+    },
+    {
+        "id": 33,
+        "nombre": "Monitor gamer LG UltraGear 24GN600 led 24",
+        "precio": 1048708,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_LG_UltraGear-24GN600_Led_24_Negro_100V240V.webp"
+    },
+    {
+        "id": 34,
+        "nombre": "Monitor gamer curvo Asus TUF Gaming VG24VQ led 23.6 ",
+        "precio": 1029900,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_Curvo_Asus-TUF-Gaming-VG24VQ-Led_23.6_Negro.webp"
+    },
+    {
+        "id": 35,
+        "nombre": "Monitor gamer curvo Samsung F390 Series C24F390FH led 24 ",
+        "precio": 788300,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_Curvo_Samsung-F390-Series-C24F390FH_Led_24_Black.webp"
+    },
+    {
+        "id": 36,
+        "nombre": "Monitor gamer LG 27GL650F led 27",
+        "precio": 1281468,
+        "imagen": "./multimedia/monitor/Monitor_GamerLG-27GL650F_Led-27_Negro_100V240V.webp"
+    },
+    {
+        "id": 37,
+        "nombre": "Monitor gamer LG UltraWide 34WL500 led 34 ",
+        "precio": 1779900,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_LG_UltraWido_34WL500_Led_34_Negro_100V240V.webp"
+    },
+    {
+        "id": 38,
+        "nombre": "Monitor gamer curvo LG UltraGear 34GL750 led 34",
+        "precio": 2500000,
+        "imagen": "./multimedia/monitor/Monitor_Gamer_Curvo_LG_UltraGear-34GL750_Led_34_Negro_Y_Rojo.webp"
+    },
+    {
+        "id": 39,
+        "nombre": "Microfono Boya BY-M1",
+        "precio": 45000,
+        "imagen": "./multimedia/microfono/Microfono_Boya_BY-M1_Condensador_Omnidireccional_Negro.webp"
+    },
+    {
+        "id": 40,
+        "nombre": "Microfono Blue Yetti",
+        "precio": 450000,
+        "imagen": "./multimedia/microfono/Microfono_Blue_Yeti_Condensador_Multipatron_Blackout.webp"
+    },
+    {
+        "id": 41,
+        "nombre": "Micrófono Trust GXT 212 Mico USB 23791",
+        "precio": 70000,
+        "imagen": "./multimedia/microfono/Microfono_Trust_GXT-212_Mico_USB_23791_Condensador_Omnidimencional.webp"
+    },
+    {
+        "id": 42,
+        "nombre": "Micrófono HyperX QuadCast",
+        "precio": 452900,
+        "imagen": "./multimedia/microfono/Microfono_HyperX_QuadCast_Condensador_Multipatron_Negro.webp"
+    },
+    {
+        "id": 43,
+        "nombre": "Microfono Technia 20 AT2020",
+        "precio": 380000,
+        "imagen": "./multimedia/microfono/Microfono_Audio-Technica-20-AT2020_Condensador_cardioide_Negro.webp"
+    },
+    {
+        "id": 44,
+        "nombre": "Micrófono Shure MV7 dinámico unidireccional negro",
+        "precio": 1156000,
+        "imagen": "./multimedia/microfono/Microfono_Shure_MV7_Dinamico_Unidireccional_Negro.webp"
+    },
+    {
+        "id": 45,
+        "nombre": "Micrófono Redragon Blazar GM300",
+        "precio": 269000,
+        "imagen": "./multimedia/microfono/Microfono_Redragon_Blazar-GM300_Condensador_Cardioide_Y_Unidireccional_Negro.webp"
+    },
+    {
+        "id": 46,
+        "nombre": "Mando Inalámbrico Bluetooth Ps4 Gamepad Blanco",
+        "precio": 100000,
+        "imagen": "./multimedia/Mandos/Mando_Inalambrico_Bluetooth_Gamepad_Blanco.webp"
+    },
+    {
+        "id": 47,
+        "nombre": "Control joystick inalámbrico Sony PlayStation DualSense CFI-ZCT1",
+        "precio": 350000,
+        "imagen": "./multimedia/Mandos/Control_Joystick_Inalambrico_Sony_PlayStation_DualSende_5_CFI-ZCT1_Cosmic_Red.webp"
+    },
+    {
+        "id": 48,
+        "nombre": "Boton Trasero Back Button Ps4",
+        "precio": 150000,
+        "imagen": "./multimedia/Mandos/Boton_Trasero_Back_Button_Ps4.webp"
+    },
+    {
+        "id": 49,
+        "nombre": "Jadebones Chrome Plating Replacement Repair Buttons 2x Resor",
+        "precio": 92700,
+        "imagen": "./multimedia/Mandos/Jadebones_Chrome_Plating_Replacement_Repair_Buttond_2x_Resor.webp"
+    },
+    {
+        "id": 50,
+        "nombre": "Camara para PC con microfono",
+        "precio": 90000,
+        "imagen": "./multimedia/camara/Camara_Web-1080_Para_Pc_Laptop_USB_Cam_Com_Microfono.webp"
+    },
+    {
+        "id": 51,
+        "nombre": "Camara Redragon GW800 1080p",
+        "precio": 200000,
+        "imagen": "./multimedia/camara/Camara_Web_Redragon-GW800_Hitman_Webcam_Para_Streaming_1080p.webp"
+    },
+    {
+        "id": 52,
+        "nombre": "Logitech C922 Pro Stream, Webcam Ideal Streaming Con Trípode",
+        "precio": 399900,
+        "imagen": "./multimedia/camara/Logitech-C922_Pro_Stream_Webacam_Ideal_Streaming_Con_Tripode.webp"
+    },
+    {
+        "id": 53,
+        "nombre": "Logitech Brio, Ultra Hd Pro Webcam 4k",
+        "precio": 929900,
+        "imagen": "./multimedia/camara/Logitech_Brio_Ultra-HD_Webcam-4K__Rigtlight_3_Con_HDR.webp"
+    },
+    {
+        "id": 54,
+        "nombre": "Camara Logitech C9205 Full-HD",
+        "precio": 360000,
+        "imagen": "./multimedia/camara/Logitech-C920S_Pro_Webcam_HD_Videochats_En_FULL_HD_1080.webp"
+    },
+    {
+        "id": 55,
+        "nombre": "Audífonos gamer Logitech G Series G332",
+        "precio": 214900,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Logitech-G-Series-G322_Black.webp"
+    },
+    {
+        "id": 56,
+        "nombre": "Audífonos gamer Redragon Ares",
+        "precio": 45300,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Redragon_Ares_Negro_Y_Rojo.webp"
+    },
+    {
+        "id": 57,
+        "nombre": "Audífonos gamer Kotion Each G9000",
+        "precio": 52000,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Kotion_Each-G9000_Black_Y_Blue.webp"
+    },
+    {
+        "id": 58,
+        "nombre": "Audífonos gamer Razer Kraken X Lite black",
+        "precio": 156900,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Razer-Kraken-X-Lite_Black.webp"
+    },
+    {
+        "id": 59,
+        "nombre": "Audífonos Logitech H151",
+        "precio": 83900,
+        "imagen": "./multimedia/audifonos/Audifonos_Logitech-H151_Negro.webp"
+    },
+    {
+        "id": 60,
+        "nombre": "Audífonos gamer Onikuma K9",
+        "precio": 104900,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Onikuma-K9_Negro_Con_Luz_RGB_Led.webp"
+    },
+    {
+        "id": 61,
+        "nombre": "Audifonos Logitech G935",
+        "precio": 800000,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Inalambricos_Logitech-G-Series-G935_Negro_Y_Azul_Con_Luz_RGB_Led.webp"
+    },
+    {
+        "id": 62,
+        "nombre": "Audifonos Logitech series G733",
+        "precio": 630000,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Inalambricos_Logitech-G-Series-G733-Kda_Con_Luz_RGB_Led.webp"
+    },
+    {
+        "id": 63,
+        "nombre": "Audífonos gamer Redragon Zeus",
+        "precio": 218000,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Redragon_Zeud-2_Negro.webp"
+    },
+    {
+        "id": 64,
+        "nombre": "Audifonos Corsair inalambricos Void Elite",
+        "precio": 380000,
+        "imagen": "./multimedia/audifonos/Audifonos_Gamer_Inalambricos_Corsair_VOID_elite_Wireless_Blanco_Con_Luz_RGB_Led.webp"
+    }
+]
