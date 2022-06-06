@@ -9,4 +9,6 @@ async function getData() {
     actualizarCarrito();
 }
 /* ---------------------------------------- */
+//Llamado de las funciones.
 getData();
+getBotonPagar.addEventListener(`click`, seccionDatosDePago);

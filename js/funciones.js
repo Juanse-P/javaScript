@@ -1,5 +1,4 @@
 /* Declaracion de todas las funciones que luego son llamadas en el index.js */
-
 //Funcion encargada de crear las cards dentro del HTML
 function escribirProductos() {
     getElementos.innerHTML = ``;
@@ -39,7 +38,7 @@ function actualizarCarrito() {
             return itemId === elemento ? total += 1 : total;
         }, 0);
         const nodoDiv = document.createElement('li');
-        nodoDiv.classList.add('list-group-item', 'text-right', 'mx-2');
+        nodoDiv.classList.add('list-group-item', 'text-right', 'mx-2', `conBorde`);
         nodoDiv.innerHTML = `<img class="img-fluid" src="${miElemento[0].imagen}" class="img-fluid">
                             <p>${numeroUnidadesItem} x ${miElemento[0].nombre} = ${divisa} ${miElemento[0].precio}</p>`;
         const miBoton = document.createElement('button');
@@ -102,4 +101,105 @@ function cargarCarritoDeLocalStorage() {
     if (miLocalSrorage.getItem(`carrito`) !== null) {
         carrito = JSON.parse(miLocalSrorage.getItem(`carrito`));
     }
+}
+/* ---------------------------------------- */
+function seccionDatosDePago() {
+    if (carrito == ``) {
+        Swal.fire('Tu carrito esta vacio!')
+    } else {
+        let timerInterval
+        Swal.fire({
+            title: 'Prodesando datos. Espere un momento!',
+            html: 'El proceso terminara en <b></b> milisegundos!',
+            timer: 1500,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                    b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+        }).then((result) => {
+            if (result.dismiss === Swal.DismissReason.timer) {
+                getElementos.innerHTML = ``;
+                let miBoton2 = document.createElement(`button`);
+                miBoton2.classList.add(`btn`, `btn-warning`, `botonConfi`);
+                miBoton2.textContent = `Confirmar compra`;
+                miBoton2.addEventListener(`click`, confirmarElPago);
+                let nodoDePagos = document.createElement(`div`)
+                nodoDePagos.classList.add(`formularioCompra`)
+                nodoDePagos.innerHTML = `<h1>Datos del comprador</h1>
+                                    <div>
+                                        <h4>Nombre: </h4>
+                                        <input class="form-control me-2" type="text" id="nombre" required value="Juan Sebastian"
+                                    </div>
+                                    <div>
+                                        <h4>Apellido: </h4>
+                                        <input class="form-control me-2" type="text" id="apellido" required value="Pinilla">
+                                    <div>
+                                        <h4>Correo electronico: </h4>
+                                        <input class="form-control me-2" type="email" id="email" required value="ejemploabc123@gmail.com">
+                                    </div>
+                                    <div>
+                                       <h4>Numero de contacto: </h4>
+                                        <input class="form-control me-2" type="text" id="celular" required value="333-333-33-33">
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="acaBoton">
+                                        </div>
+                                        <div>
+                                            <a class="btn btn-warning botonConfi" href="./index.html"><- regresar <- </a>
+                                        </div>
+                                    </div>`;
+                getElementos.appendChild(nodoDePagos);
+                nodoDePagos.appendChild(miBoton2);
+                getElementos.classList.remove(`contenedorPrincipal`)
+                getElementos.classList.add(`elemBlanc`)
+                getBotonVaciar.remove();
+                getBotonPagar.remove();
+                getEliminable.remove();
+                getEliminable2.remove();
+                getEliminable3.remove();
+            }
+        })
+
+    }
+}
+/* ---------------------------------------- */
+function confirmarElPago() {
+    let timerInterval
+    Swal.fire({
+        title: 'Confirmando compra',
+        html: 'Tu compra estara lista en <b></b> milisegundos.',
+        timer: 5000,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+    }).then((result) => {
+        if (result.dismiss === Swal.DismissReason.timer) {
+            carrito = [];
+            actualizarCarrito();
+            localStorage.clear();
+            getAsideLat.remove();
+            getElementos.innerHTML = ``;
+            getElementos.innerHTML = `<div class="d-flex flex-column justify-content-center align-items-sm-center">
+                                        <h4>Gracias por su compra!</h4>
+                                        <p class="centro"> Se enviara la factura junto al proceso de pago de la misma al correo electonico que ingreso , cuenta con hasta 10 dias habiles para realizar la confirmación y el pago.</p>
+                                        <h4>Gracias por confiar en nosotros para realizar sus compras!</h4>
+                                        <img src="./multimedia/confiComp.webp">
+                                     </div>`;
+        }
+    })
 }

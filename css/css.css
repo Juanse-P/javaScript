@@ -4,6 +4,34 @@
     box-sizing: border-box;
 }
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    font-family: 'Mulish', sans-serif;
+}
+
+h3 {
+    font-family: 'Mulish', sans-serif;
+}
+
+h4 {
+    font-family: 'Mulish', sans-serif;
+}
+
+h5 {
+    font-family: 'Mulish', sans-serif;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+}
+
+.centro {
+    text-align: center;
+}
+
 nav {
     background: #FFDE59;
     display: flex;
@@ -27,9 +55,18 @@ nav div img {
 }
 
 .contenedorPrincipal {
+    border-radius: 10px;
+    padding: 0.5rem;
+    background: white;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     gap: 2rem;
+}
+
+.elemBlanc {
+    border-radius: 10px;
+    padding: 0.5rem;
+    background: white;
 }
 
 .productolst {
@@ -85,7 +122,19 @@ nav div img {
 
 .carrito {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.formCompra {
+    padding: 0.5rem;
+}
+
+.botonConfi {
+    margin: 1rem;
+}
+
+.conBorde {
+    border-radius: 25px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -97,6 +146,11 @@ nav div img {
     nav div img {
         margin-left: 0;
     }
+
+    .carrito {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -105,6 +159,11 @@ nav div img {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 1rem;
+    }
+
+    .carrito {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
